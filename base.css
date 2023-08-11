@@ -32,18 +32,24 @@ body {
   margin-top: 44px !important;
 }
 
-#trading-vue-js-botbar-canvas{
-  margin-left: -68px!important;
+#trading-vue-js-botbar-canvas {
+  margin-left: -68px !important;
 }
 
 .trading-vue-toolbar {
-  width: 70px!important;
-  margin-left: -12px!important;
+  width: 70px !important;
+  margin-left: -12px !important;
+}
+
+.signal-indicator .outer-ring {
+  width: 22rem;
 }
 
 @media (max-width: 1530px) {
   .right-side-bar {
     width: 20rem !important;
+    background-color: #13182a;
+    z-index: 2;
   }
 
   .main-dash {
@@ -51,7 +57,7 @@ body {
   }
 
   .right-bar-drop {
-    width: 15.3rem!important;
+    width: 15.3rem !important;
   }
 }
 
@@ -73,4 +79,26 @@ body {
 
 ::-webkit-scrollbar {
   width: 0;
+}
+
+#modal {
+  width: 80vw !important;
+  height: 70vh !important;
+  z-index: 999 !important;
+}
+
+.trading-vue-toolbar {
+  z-index: 1 !important;
+}
+
+.resize-line{
+  z-index: 3 !important;
+}
+
+.bottom-section{
+  z-index: 3!important;
+}
+
+.trading-vue-legend {
+  z-index: 1 !important;
 }
